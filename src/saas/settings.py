@@ -29,12 +29,14 @@ DEBUG=config("DJANGO_DEBUG", cast= bool)
 print("DEBUG", DEBUG, type(DEBUG))
 
 ALLOWED_HOSTS = [
-    "saas.railway.app" #https://saas.prod.railway.app
+    ".railway.app", #https://saas.prod.railway.app
 ]
 if DEBUG:
     ALLOWED_HOSTS+=[
         "127.0.0.1",
-        "localhost"
+        "localhost",
+        ".railway.app",
+        
     ] 
 
 # Application definition
