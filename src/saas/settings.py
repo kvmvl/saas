@@ -24,7 +24,7 @@ print('BASE_DIR', BASE_DIR)
 SECRET_KEY = 'django-insecure-&(1d@s%^sz63h2nj9q0u=&%xm^%#amnyr1@s20=w!4o$&ja^t8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = str(os.environ.get("DJANGO_DEBUG")).lower() == "true"
+DEBUG = str(os.environ.get("DJANGO_DEBUG")).lower() == "false"
 print("DEBUG", DEBUG, type(DEBUG))
 
 ALLOWED_HOSTS = [
